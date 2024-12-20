@@ -8,3 +8,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('categories', CategoryController::class);
+Route::resource('blogs', BlogController::class);

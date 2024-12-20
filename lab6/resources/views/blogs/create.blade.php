@@ -1,4 +1,4 @@
-<h1>Create New Invoice</h1>
+<h1>Create New Blog</h1>
 
 <form method="POST" action="{{ route('blogs.store') }}">
     @csrf
@@ -34,7 +34,7 @@
         @enderror
     </div>
 
-    <button type="submit">Create Invoice</button>
+    <button type="submit">Create Blog</button>
 </form>
 
-<a href="{{ route('blogs.index') }}">Back to Invoices</a>
+<a href="{{ route('blogs.index') }}">Back to Blogs</a>

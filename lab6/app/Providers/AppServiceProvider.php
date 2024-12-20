@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Repositories\BlogRepository;
+use App\Repositories\BlogRepositoryInterface;
+use App\Repositories\CategoryRepository;
+use App\Repositories\CategoryRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(CategoryRepositoryInterface::class, CategoryRepository::class);
+        $this->app->singleton(BlogRepositoryInterface::class, BlogRepository::class);
     }
 
     /**
