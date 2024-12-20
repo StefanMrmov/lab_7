@@ -142,6 +142,7 @@
       <path value="$PROJECT_DIR$/lab6/vendor/ta-tikoma/phpunit-architecture-test" />
       <path value="$PROJECT_DIR$/lab6/vendor/phpstan/phpdoc-parser" />
       <path value="$PROJECT_DIR$/lab6/vendor/composer" />
+      <path value="$PROJECT_DIR$/lab6/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
