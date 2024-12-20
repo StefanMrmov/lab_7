@@ -1,4 +1,4 @@
-<h1>Edit Invoice</h1>
+<h1>Edit Category</h1>
 
 <form method="POST" action="{{ route('blogs.update', $blog) }}">
     @csrf
@@ -13,7 +13,7 @@
     </div>
 
     <div>
-        <label for="category_id">Client:</label>
+        <label for="category_id">Category:</label>
         <select name="category_id" id="category_id">
             @foreach ($categories as $category)
                 <option value="{{ $category->id }}" {{ old('category_id', $blog->category_id) == $category->id ? 'selected' : '' }}>

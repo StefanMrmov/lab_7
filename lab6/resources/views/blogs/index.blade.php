@@ -1,7 +1,7 @@
 <h1>Blogs</h1>
 
     <form method="GET" action="{{ route('blogs.index') }}">
-        <label for="category">Filter by Status:</label>
+        <label for="category">Filter by category name:</label>
         <select name="category" id="category">
             <option value="{{null}}">All</option>
             @foreach($categories as $category)
@@ -54,3 +54,5 @@
     @endforeach
     </tbody>
 </table>
+
+<a href="http://127.0.0.1:8000/categories">Go to Categories</a>

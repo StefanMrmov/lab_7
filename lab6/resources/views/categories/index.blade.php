@@ -1,4 +1,4 @@
-    <h1>Clients</h1>
+    <h1>Categories</h1>
 
     <form method="GET" action="{{ route('categories.index') }}">
         <input type="text" name="search" value="{{ request('search') }}" placeholder="Search...">
@@ -39,3 +39,5 @@
         @endforeach
         </tbody>
     </table>
+
+    <a href="http://127.0.0.1:8000/blogs">Go to Blogs</a>
